@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="Description" content="xenonstack" />
+    <link rel="stylesheet" type="text/css" href="Css/grid.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="Css/primary.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../Css/presentation-grid.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+  </head>
+
+  <body>
+    <!-- What is Grid Section Start -->
+    <section class="What is Grid">
+      <div class="container">
+       <div class="grid-title">
+         <h1>What is Grid Css?</h1>
+         <p>CSS Grid Layout provides a two dimensional layout system, 
+           controlling layout in rows and columns.A really common layout in web design is 
+           a header, sidebar, body and footer layout.</p>
+           <div class="image-background">
+            <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/tj7KmP72RKkffGQRswpA.svg" class="" alt="Basic Layout Html">
+           </div>
+           <p class="content">Over the years, there have been many methods to solve this layout, but with CSS grid, not only is it relatively straightforward, but you have lots of options. 
+             Grid is exceptionally useful at combining the control that extrinsic sizing provides with the flexibility of intrinsic sizing, 
+             which makes it ideal for this sort of layout. 
+             This is because grid is a layout method designed for two-dimensional content. 
+             That is, laying things out in rows and columns at the same time.
+            When creating a grid layout you define a grid with rows and columns. 
+            Then you place items onto that grid, or allow the browser to auto-place them into
+             the cells you have created. There's a lot to grid, but with an overview of what is 
+             available you'll be making grid layouts in no time.</p>
+             <div class="basic-overview">
+               <h2>Overview of Grid</h2>
+              <ol>
+                <li>A grid can be defined with rows and columns.
+                   You can choose how to size these row and column tracks or they can react to the size of the content.</li>
+                <li>Direct children of the grid container will be automatically placed onto this grid.</li>
+                <li>you can place the items in the precise location that you want.</li>
+                <li>Lines and areas on the grid can be named to make placement easier.</li>
+                <li>Spare space in the grid container can be distributed between the tracks.</li>
+                <li>Grid items can be aligned within their area.</li>
+              </ol>
+             </div>
+       </div>
+      </div>
+    </section>
+    <!-- What is Grid Section End -->
+
+    <!-- Grid Terminology Section Start -->
+    <section class="grid-terminology">
+      <div class="container">
+        <h2>Grid terminology</h2>
+        <ol>
+          <li>Grid lines</li>
+          <li>Grid tracks</li>
+          <li>Grid cell</li>
+          <li>Grid area </li>
+          <li>Gaps</li>
+        </ol>
+
+       <div class="grid-lines">
+        <h3>Grid Lines</h3>
+        <p>A grid is made up of lines, which run horizontally and vertically. If your grid has three columns,
+           it will have four column lines including the one after the last column.
+          Lines are numbered starting from 1, with the numbering following the writing mode and script 
+          direction of the component. This means that column line 1 will be on the left in a left-to-right
+           language such as English, and on the right in a right-to-left language such as Arabic.</p>
+         <div class="image-background">
+          <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/Sf8WXYmbhZkbhhPeqTrY.svg">
+         </div>
+       </div>
+       <div class="grid-tracks">
+        <h3>Grid Tracks</h3>
+        <p>A track is the space between two grid lines. A row track is between two row lines and a column track between two column lines.
+           When we create our grid we create these tracks by assigning a size to them.</p>
+         <div class="image-background">
+          <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/7YkhnpgOQLrcaxjlKmlU.svg">
+         </div>
+       </div>
+       <div class="grid-cells">
+        <h3>Grid Cell</h3>
+        <p>A grid cell is the smallest space on a grid defined by the intersection of row and column tracks. It's just like a table cell or a cell in a spreadsheet.
+           If you define a grid and don't place any of the items they will automatically be laid out one item into each defined grid cell.</p>
+         <div class="image-background">
+          <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/lpiPCpW6fy4BjFOL6j77.svg">
+         </div>
+       </div>
+       <div class="grid-area">
+        <h3>Grid Area</h3>
+        <p>Several grid cells together. Grid areas are created by causing an item to span over multiple tracks.</p>
+         <div class="image-background">
+          <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/pGmMokRfoVbLNxf1VXrF.svg">
+         </div>
+       </div>
+       <div class="grid-gaps">
+        <h3>Grid Gap</h3>
+        <p>A gutter or alley between tracks. 
+          For sizing purposes these act like a regular track. You can't place content into a gap but you can span grid items across it.</p>
+         <div class="image-background">
+          <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/JNXSRH4j77loSB099E04.svg">
+         </div>
+       </div>
+      </div>
+      </section>
+    <!-- Grid Terminology Section End -->
+      <!-- Pratical Implementation Section Start -->
+      <Section class="practical Implementation">
+        <div class="container">
+          <h2>Grid Practical Examples</h2>
+        <div class="wrapper">
+          <div class="controls">
+              <label>
+                  Custom columns
+                  <select id="columns-switcher">
+                      <option value="auto">Normal</option>
+                      <option value="33% 33% 33%">one-third</option>
+                      <option value="repeat(4,25%)">Repeat</option>
+                  </select>
+              </label>
+          </div>
+          <div class="columns-container grid-container">
+              <div class="box">1</div>
+              <div class="box">2</div>
+              <div class="box">3</div>
+              <div class="box">4</div>
+              <div class="box">5</div>
+              <div class="box">6</div>
+              <div class="box">7</div>
+              <div class="box">8</div>
+          </div>
+          </article>
+      </div>
+      <h2>Custom Rows</h2>
+      <div class="wrapper">
+        <div class="controls">
+            <label>
+                Custom Rows
+                <select id="rows-switcher">
+                    <option value="auto">Normal</option>
+                    <option value="200px 100px 300px auto">Custom</option>
+                    <option value="repeat(8,200px)">Repeat</option>
+                </select>
+            </label>
+        </div>
+        <div class="row-container grid-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+        </article>
+    </div>
+    <div class="instrict-keyowrds">
+      <h2>Intrinsic sizing keywords</h2>
+    <p>In addition to the length and percentage dimensions as described in the section on sizing units, 
+      grid tracks can use intrinsic sizing keywords. These keywords are defined in the Box Sizing specification
+       and add additional methods of sizing boxes in CSS, not just grid tracks.</p>
+       <ul>
+        <li class="bold-heading">min-content
+          <p>The min-content keyword will make a track as small as it can be without
+             the track content overflowing. Changing the example grid layout to have
+              three column tracks all at min-content size will mean they become as narrow 
+              as the longest word in the track.</p>
+        </li>
+         <li class="bold-heading">max-content
+           <p>The max-content keyword has the opposite effect. The track will become as wide enough for all of the content to
+              display in one long unbroken string. This might cause overflows as the string will not wrap.</p>
+         </li>
+         <li class="bold-heading">fit-content()
+           <p>The fit-content() function acts like max-content at first. However, once the track 
+             reaches the size that you pass into the function, the content starts to wrap. So fit-content(10em) 
+             will create a track that is less than 10em,
+              if the max-content size is less than 10em, but never larger than 10em.</p>
+         </li>
+       </ul>
+    </div>
+    
+    <div class="wrapper">
+      <div class="controls">
+          <label>
+              Content
+              <select id="content-switcher">
+                  <option value="auto">Auto</option>
+                  <option value="minmax(100px, max-content)">Minimum Content</option>
+                  <option value="minmax(100px, 600px)">Maximum Content</option>
+                  <option value="fit-content(40%)">Fit Content</option>
+              </select>
+          </label>
+      </div>
+      <div class="content-container grid-container">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">5</div>
+          <div class="box">6</div>
+          <div class="box">7</div>
+          <div class="box">8</div>
+      </div>
+      </article>
+    </div>
+
+    <h2>Fr Values</h2>
+    <p>We have existing length dimensions, percentages, and also these new keywords. 
+      There is also a special sizing method which only works in grid layout. 
+      This is the fr unit, a flexible length which describes a share of the available space in the grid container.
+
+      The fr unit works in a similar way to using flex: auto in flexbox.
+       It distributes space after the items have been laid out. 
+       Therefore to have three columns which all get the same share of available space:</p>
+    <div class="wrapper">
+      <div class="controls">
+          <label>
+              Fr Values
+              <select id="fr-switcher">
+                  <option value="auto">Auto</option>
+                  <option value="1fr">fr1</option>
+                  <option value="1fr 1fr">fr2</option>
+                  <option value="1fr 1fr 1fr">fr3</option>
+                  <option value="repeat(8,1fr)">Repeat-1fr</option>
+                  <option value="repeat(4,2fr)">Repeat-2fr</option>
+              </select>
+          </label>
+      </div>
+      <div class="fr-container grid-container">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">5</div>
+          <div class="box">6</div>
+          <div class="box">7</div>
+          <div class="box">8</div>
+      </div>
+      </article>
+    </div>
+    <div class="autofill-autofit">
+      <div class="title">
+        <h2>Autofill and Autofit</h2>
+        <p>You can combine everything you have learned about track sizing, minmax(),
+           and repeat, to create a useful pattern with grid layout. 
+           Perhaps you don't want to specify the number of column tracks,
+            but instead want to create as many as will fit in your container.
+          You can achieve this with repeat()
+           and the auto-fill or auto-fit keywords. 
+           In the demo below grid will create as many 200 pixel tracks as will fit in the container.</p>
+      </div>
+      <div class="image-background">
+        <h2>Syntax</h2>
+        <img src="autofill vs autofit.JPG" class="" alt="Autofill Autofit Syntax">
+        <h2>Visual Diagram Example</h2>
+        <img src="https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/12/auto-fill.png?ssl=1" class="" alt="Autofill Autofit Example">
+      </div>
+      <div class="wrapper">
+        <div class="controls">
+            <label>
+                Autofill and Autofit
+                <select id="auto-switcher">
+                    <option value="auto">Auto</option>
+                    <option value="repeat(auto-fill, minmax(100px, 1fr))">autofill</option>
+                    <option value="repeat( auto-fit, minmax(100px, 1fr) )">autofit</option>
+                </select>
+            </label>
+        </div>
+        <div class="auto-container grid-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+        </article>
+      </div>
+    </div>
+    <div class="autoflow">
+      <div class="title">
+        <h2>Autoflow</h2>
+        <p>The default behavior of grid layout is to place items along the rows.
+           You can instead cause the items to place into columns using grid-auto-flow: column. 
+          You need to define row tracks otherwise the items will create intrinsic column tracks,
+           and layout out all in one long row.</p>
+      </div>
+      <div class="image-background">
+        <h2>Syntax</h2>
+        <img src="autoflow.JPG" class="" alt="Autofill Autofit Syntax">
+      </div>
+      <div class="wrapper">
+        <div class="controls">
+            <label>
+                Autofill and Autofit
+                <select id="autoflow-switcher">
+                    <option value="row">Autoflow Row</option>
+                    <option value="column">autoflow Column</option>
+                    <option value="row dense">Autoflow Row Dense</option>
+                    <option value="column dense">Autoflow Column Dense</option>
+                </select>
+            </label>
+        </div>
+        <div class="autoflow-container grid-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+        </article>
+      </div>
+    </div>
+      </div>
+      </Section>
+      <!-- Practical Implementation Section End -->
+    <script src="Css/grid.js"></script>
+  </body>
+</html>
